@@ -44,7 +44,7 @@ gulp.task('watchjs',function(){
 	})
 });
 //自动刷新
-/*gulp.task('html', function () {
+gulp.task('html', function () {
     gulp.src('index.html')//指定被刷新的html路径
     .pipe(connect.reload());
 });
@@ -60,9 +60,9 @@ gulp.task('watch', function () {
     gulp.watch('*.html', ['html']);  //监听html目录下所有文件
 });
 
-gulp.task('default',['watch','html','connect']); */
+gulp.task('default',['watch','html','connect']); 
 
-gulp.task('connect',function(){
+/*gulp.task('connect',function(){
 	gulp.src('index.html')//指定被刷新的html路径
     .pipe(connect.reload())
 	.pipe(connect.server({
@@ -70,4 +70,4 @@ gulp.task('connect',function(){
 		livereload:true
 	}))
 	.pipe(gulp.watch('*.html', ['html'])); 
-});
+});*/
