@@ -112,7 +112,7 @@
             a:hover{
                 text-decoration: underline;
             }
-            i{
+            .service-arrow{
                 font-size:12px;
                 position: absolute;
                 right:10px;
@@ -198,6 +198,107 @@
                 text-align: center;
                 position: relative;
                 top:1px;
+            }
+        }
+    }
+}
+.subnav{
+    display:none;
+    position: absolute;
+    left: 188px;
+    top: -5px;
+    padding-left:18px;
+    width: 692px;
+    height: 518px;
+    border: 2px solid #F94A14;
+    box-shadow: 2px 2px 0 #dcdadb;
+    background-color: #FFF;
+    color: #333;
+    font-size: 12px;
+    z-index: 12;
+    .subnav_left{
+        padding-top: 10px;
+        width: 415px;
+        height: 490px;
+        overflow: hidden;
+        padding-right: 12px;
+        padding-left: 10px;
+        float: left;
+        .service_panel{
+            font-size:12px;
+            margin-bottom:5px;
+            h5{
+                position: relative;
+                height: 36px;
+                line-height: 36px;
+                font-size: 16px;
+                color: #333;
+            }
+            a.more span{
+                font-size:12px;
+                right:6px;
+                position: absolute;
+                font-weight: 400;
+                top:0;
+            }
+            a.more i{
+                position: relative;
+                left:-4px;
+                font-size:12px;
+            }
+            p{
+                height: 104px;
+                overflow: hidden;
+                padding-bottom: 33px;
+                line-height: 26px;
+            }
+            p a{
+                display:inline-block;
+                margin-right:12px;
+                white-space: nowrap;
+            }
+            
+        }
+    }
+    .subnav_right{
+        float: left;
+        width: 253px;
+        border-left: 1px solid #f4f4f4;
+        position: relative;
+        height: 498px;
+        padding-top: 20px;
+        h3{
+            line-height: 18px;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 400;
+        }
+        a{
+            float:left;
+            display: block;
+            width: 97px;
+            height: 143px;
+            padding: 10px 0 0 20px;
+            overflow: hidden;
+            .img_wrap{
+                width:97px;
+                height:97px;
+                overflow: hidden;
+                background:#4f4f4f;
+            }
+            img{
+                width:98px;
+                height:97px;
+                opacity: 0.9;
+            }
+            h5{
+                height: 26px;
+                line-height: 26px;
+                font-size: 12px;
+                overflow: hidden;
+                font-weight: 400;
+                color: #999;
             }
         }
     }
@@ -356,6 +457,118 @@
         }
     }
 }
+.member_bd{
+    height:91px;
+    position: relative;
+    .member_icon{
+        display: block;
+        margin: 0 auto;
+        width: 74px;
+        height: 56px;
+        a{
+            display: inline-block;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            background-clip: padding-box;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            overflow: hidden;
+            img{
+                width:50px;
+                height:50px;
+            }
+        }
+    }
+    .member_nick{
+        display:block;
+        line-height:17px;
+        height:17px;
+        text-align:center;
+        strong{
+            font-weight: 400;
+        }
+    }
+    .member_tjb{
+        height:17px;
+        line-height:17px;
+        .member_gettjb{
+            display: inline-block;
+            border-radius: 9px;
+            background-clip: padding-box;
+            background: #ffe4db;
+            padding: 0 10px 0 20px;
+            position: relative;
+            border: none;
+            color:#ff5000;
+            span{
+                position: absolute;
+                top: 0;
+                display: block;
+                left: 0;
+                height: 16px;
+                width: 16px;
+                vertical-align: middle;
+                background: url('//img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png') 0 0 no-repeat;
+                background-position: 0 -572.5px;
+                color:#ff5000;
+            }
+        }
+        .member_club{
+            margin-left:2px;
+            display: inline-block;
+            border-radius: 9px;
+            background-clip: padding-box;
+            background: #ffe4db;
+            padding: 0 10px 0 20px;
+            position: relative;
+            border: none;
+            color:#ff5000;
+            span{
+                position: absolute;
+                top: 0;
+                display: block;
+                left: 0;
+                height: 16px;
+                width: 16px;
+                vertical-align: middle;
+                background: url('//img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png') 0 0 no-repeat;
+                background-position: 0 -528px;
+                color:#ff5000;
+            }
+        }
+    }
+}
+.member_ft{
+    height:40px;
+    overflow: hidden;
+    margin-top:2px;
+    padding-left:15px;
+    text-align: center;
+    .member_ft_wrap{
+        height:25px;
+        margin-top:8px;
+        text-align: center;
+        a{
+            width:75px;
+            float: left;
+            line-height: 25px;
+            margin-right: 7px;
+            text-align: center;
+            color: #FFF;
+            background-image: linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+            background-repeat: repeat-x;
+            border-radius: 4px;
+            background-clip: padding-box;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .ml1{
+            width:92px;
+        }
+    }
+}
+
 
 .belt .wrap{
     margin-top:10px;
@@ -688,6 +901,7 @@
 }
 .qiang .wrap{
     margin-top:10px;
+    height:264px;
     background:#fff;
     overflow: hidden;
     h3{
@@ -799,6 +1013,9 @@
                 line-height: 28px;
                 color:#999;
             }
+            .extra{
+                margin-top:34px;
+            }
             .yuan{
                 font-size:12px;
                 color:#ff5000;
@@ -811,6 +1028,335 @@
                 color:#999;
                 margin-left:6px;
                 text-decoration: line-through;
+            }
+        }
+    }
+}
+.tanx .wrap{
+    margin-top:10px;
+    img{
+    width:1190px;
+    height:70px;
+    }
+}
+.hdzb .wrap{
+    margin-top:10px;
+    overflow:hidden;
+}
+
+.fashion .wrap{
+    margin-top:10px;
+    overflow:hidden;
+    .fashion_inner{
+        background:#fff;
+        width:840px;
+        height:290px;
+        float:left;
+        h3{
+            color: #AD45Df;
+            border-bottom: 1px solid #f4f4f4;
+            position: relative;
+            padding-left: 32px;
+            margin-top: 5px;
+            line-height: 48px;
+            font-size: 20px;
+            em{
+                font-style: normal;
+                display: block;
+                color: #AD45Df;
+            }
+        }
+        h3:before{
+            background-image: linear-gradient(45deg, #8558d6, #b865e2);
+            background: #8558d6;
+            background-repeat: repeat-x;
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 16px;
+            top: 16px;
+            left: 20px;
+        }
+    }
+    .fashion_list{
+        .item{
+            width: 278px;
+            border: 1px solid transparent;
+            border-right: 1px solid #f4f4f4;
+            border-bottom-color: #fff;
+            float: left;
+            height: 234px;
+        }
+        .info{
+            padding-left:20px;
+            h4{
+                margin-top: 27px;
+                font-size: 18px;
+                color: #333;
+                line-height: 26px;
+                height: 26px;
+                font-weight: normal;
+            }
+            .subtitle{
+                color: #999;
+                line-height: 22px;
+                height: 22px;
+                overflow: hidden;
+            }
+        }
+    }
+    .img_wrap{
+        margin-top: 12px;
+        padding-left: 16px;
+        a{
+            margin-left:6px;
+            float:left;
+            display:block;
+            img{
+                width:120px;
+                height:120px;
+            }
+        }
+    }
+    .fashion_tanx{
+        float: right;
+        width: 298px;
+        height: 248px;
+        border: 1px solid #fff;
+        overflow: hidden;
+        padding: 20px;
+        background: #fff;
+    }
+}
+
+.pzts .wrap{
+    margin-top:10px;
+    overflow:hidden;
+}
+.afford{
+    overflow:hidden;
+}
+.afford .wrap{
+    margin-top:10px;
+    overflow:hidden;
+    .afford_inner{
+        background:#fff;
+        width:1190px;
+        height:256px;
+        overflow:hidden;
+        h3{
+            color: #31ba98;
+            border-bottom: 1px solid #f4f4f4;
+            position: relative;
+            padding-left: 32px;
+            margin-top: 5px;
+            line-height: 48px;
+            font-size: 20px;
+            overflow:hidden;
+            em{
+                font-style: normal;
+                display: block;
+                color: #31ba98;
+            }
+        }
+        h3:before{
+            background-image: linear-gradient(45deg, #b4ec51, #31ba98);
+            background: #31ba98;
+            background-repeat: repeat-x;
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 16px;
+            top: 16px;
+            left: 20px;
+        }
+    }
+    .item{
+        float: left;
+        width: 216px;
+        height: 200px;
+        border: 1px solid transparent;
+        border-bottom-color: #f4f4f4;
+        border-right-color: #f4f4f4;
+        padding-left: 20px;
+        h4{
+            margin-top: 24px;
+            line-height: 26px;
+            height: 26px;
+            font-weight: normal;
+            font-size: 18px;
+            color: #333;
+        }
+    }
+    .item_inner{
+        .img_wrap{
+            margin-top:10px;
+            float:left;
+            img{
+                width:120px;
+                height:120px;
+            }
+        }
+        .info{
+            margin-left:131px;
+            overflow: hidden;
+            .title{
+                margin-top: 22px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #333;
+            }
+            .subtitle{
+                font-size: 14px;
+                color: #999;
+                line-height: 22px;
+            }
+            a{
+                margin-top: 13px;
+                display: block;
+                width: 76px;
+                height: 22px;
+                line-height: 22px;
+                border: 1px solid #ff5000;
+                color: #ff5000;
+                border-radius: 12px;
+                background-clip: padding-box;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.rmdp .wrap{
+    margin-top:10px;
+    overflow:hidden;
+}
+
+
+.hotsale .wrap{
+    margin-top:10px;
+    overflow:hidden;
+    .hotsale_inner{
+        background:#fff;
+        width:1190px;
+        overflow:hidden;
+        h3{
+            color: #ff9f00;
+            border-bottom: 1px solid #f4f4f4;
+            position: relative;
+            padding-left: 32px;
+            margin-top: 5px;
+            line-height: 48px;
+            font-size: 20px;
+            overflow:hidden;
+            em{
+                font-style: normal;
+                display: block;
+                color: #ff9f00;
+            }
+        }
+        h3:before{
+            background-image: linear-gradient(45deg, #fad961, #ff9f00);
+            background: #ff9f00;
+            background-repeat: repeat-x;
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 16px;
+            top: 16px;
+            left: 20px;
+        }
+    }
+    .hotsale_item{
+        float: left;
+        padding: 20px 20px 0 20px;
+        border: 1px solid transparent;
+        color: #6c6c6c;
+        width: 196px;
+        height: 312px;
+        overflow: hidden;
+        position: relative;
+        border-right-color: #f4f4f4;
+        border-bottom-color: #f4f4f4;
+        .img_wrap{
+            width:197px;
+            height:197px;
+            overflow: hidden;
+            background:#4f4f4f;
+            img{
+                width: 101%;
+                height: 100%;
+                background:#fff;
+            }
+        }
+        h4{
+            margin-top: 7px;
+            line-height: 22px;
+            height: 44px;
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+            transition: color 0.3s;
+            overflow: hidden;
+        }
+        .info{
+            margin-top:22px;
+            height:24px;
+            line-height:24px;
+            .price{
+                float:left;
+                color:#f40;
+                font-size:20px;
+            }
+            .price em{
+                font-family: "Microsoft Yahei";
+                display: inline-block;
+                letter-spacing: normal;
+                word-spacing: normal;
+                vertical-align: top;
+                margin-right: 2px;
+                font-size: 12px;
+                font-style: normal;
+            }
+            .price i{
+                font-style: normal;
+            }
+            .sales{
+                float:right;
+                color:#9ca0aa;
+                margin-top:3px;
+            }
+        }
+        .item_more{
+            display:none;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            width: 236px;
+            height: 82px;
+            background: #FF5000;
+            .similar{
+                margin: 0 auto;
+                width: 120px;
+                margin-top: 15px;
+                line-height: 32px;
+                height: 32px;
+                font-size: 18px;
+                font-weight: normal;
+                border-bottom: 1px solid #FE964A;
+                color: #fff;
+                text-align: center;
+            }
+            .similar i{
+                font-size:16px;
+                margin-right:4px;
+            }
+            p{
+                line-height: 22px;
+                font-size: 12px;
+                height: 22px;
+                color: #fff;
+                text-align: center;
             }
         }
     }
