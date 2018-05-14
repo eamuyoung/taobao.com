@@ -1,16 +1,4 @@
-body,button,input,select,textarea{
-    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
-}
-li{
-	list-style:none;
-}
-a{
-	text-decoration: none;
-}
-ul{
-	margin:0;
-	padding:0;
-}
+
 .clear:after{
 	content:'';
 	display: block;
@@ -224,4 +212,21 @@ template {
 
 [hidden] {
 	display: none;
+}
+
+body,button,input,select,textarea{
+    font:12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+ul,p,h1,h2,h3,h4,h5{
+	margin:0;
+	padding:0;
+}
+img{
+	display:block;
 }

@@ -1,5 +1,6 @@
 $color1:#ff5000;
 $color2:#ff9000;
+$back_image:linear-gradient(to right,#ff9000 0,#ff5000 100%);
 
 @import "iconfont";
 @import "indexheader";
@@ -13,5 +14,8 @@ body{
 .wrap{
     width:1190px;
     margin:0 auto;
+}
+a{
+    color:#3c3c3c;
 }
 
