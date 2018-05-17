@@ -387,9 +387,17 @@ a {
   position: relative;
   display: none;
 }
+.static_form .notice1, .static_form .notice2 {
+  display: none;
+  position: absolute;
+  background: #F00;
+  left: 20px;
+  top: 20px;
+}
 .static_form .username_field {
   margin-top: 20px;
   position: relative;
+  background: #fff;
 }
 .static_form .username_field label {
   display: block;
@@ -403,6 +411,7 @@ a {
   left: 1px;
   top: 1px;
   outline: 0;
+  z-index: 11;
 }
 .static_form .username_field label i {
   font-size: 22px;
@@ -424,6 +433,9 @@ a {
   height: 18px;
   padding: 11px 8px 11px 50px;
   border: 1px solid #ddd;
+  position: relative;
+  z-index: 10;
+  background: transparent;
 }
 .static_form .pwd_field {
   margin-top: 20px;

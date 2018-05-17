@@ -39,7 +39,7 @@
 						</div>
 					</li>
 					<li class="site-nav-sign">
-						<a href="#" class="h">亲，请登录</a><a href="#">免费注册</a>
+						<a href="login.html" class="h">亲，请登录</a><a href="#">免费注册</a>
 					</li>
 					<li>
 						<a href="#">手机逛淘宝</a>
@@ -134,7 +134,7 @@
 			<div class="wrap">
 				<div class="logo">
 					<h1>
-						<a href="#">
+						<a href="index.html">
 							<i class="iconfont tb-logo-cn">㖸</i>
 							<i class="iconfont tb-logo-url" data-spm-anchor-id="a2145.7268393.0.i2.f9aa5d7crap26f">㖷</i>
 						</a>
@@ -146,13 +146,84 @@
 			</div>
 		</div>
 	</header>
-	<div class="steps">
-		
+	<div class="steps page">
+		<ol>
+			<li class='active'>
+				<i data-spm-anchor-id="a2145.7268393.0.i11.f9aa5d7crap26f">1</i>
+				<span>设置用户名</span>
+			</li>
+			<li>
+				<i data-spm-anchor-id="a2145.7268393.0.i14.f9aa5d7crap26f">2</i>
+				<span>填写账号信息</span>
+			</li>
+			<li>
+				<i data-spm-anchor-id="a2145.7268393.0.i15.f9aa5d7crap26f">3</i>
+				<span>设置支付方式</span>
+			</li>
+			<li>
+				<i class="iconfont" data-spm-anchor-id="a2145.7268393.0.i16.f9aa5d7crap26f">㑇</i>
+				<span>注册成功</span>
+			</li>
+		</ol>
+		<div class="switch_lang">
+			<a href="#">
+				中文
+			</a>
+			|
+			<a href="#">
+				English
+			</a>
+		</div>
 	</div>
 	<div class="content">
-		<form action="#">
-			
-		</form>
+		<div class="wrap">
+			<form action="php/register.php" method='post'>
+				<div class="form_list">
+					<div class="form_group">
+						<div class="form_item clear">
+							<span class='form_label'>手机号</span>
+							<div class="mobile_text">
+								<div class="phone_area">
+									<span class='region'>中国大陆</span>
+									<span class='region_num'>+86</span>
+								</div>
+								<input type="text" name='mobile' class='mobile_input' placeholder='请输入你的手机号码'/>
+							</div>
+							<div class="notice1" style='display:none'>
+								手机号重复！
+							</div>
+							<div class="notice2" style='display:none'>
+								请输入正确的手机号
+							</div>
+						</div>
+						<div class="form_item clear">
+							<span class='form_label'>密码</span>
+							<input type="password" name='password' class='password' />
+							<div class="notice3" style='display:none'>
+								密码不能为空！
+							</div>
+						</div>
+					</div>
+					<div class="form_group">
+						<div class="form_item">
+							<button type='submit' class='submit_btn' name='submit'>下一步</button>
+						</div>
+						<div class="form_item">
+							<a href="#">
+								切换成企业账户注册
+							</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
+	<footer>
+		<div class="wrap">
+			<a href="#">
+				<img src="images/register_footer.png" alt="" />
+			</a>
+		</div>
+	</footer>
 </body>
 </html>
