@@ -1,0 +1,310 @@
+$color1:#ff5000;
+$color2:#ff9000;
+$back_image:linear-gradient(to right,#ff9000 0,#ff5000 100%);
+
+@import "iconfont";
+
+body{
+    color:#3c3c3c;
+    font: 12px/1.5 "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.wrap{
+    width:1200px;
+    margin:0 auto;
+}
+a{
+    color:#3c3c3c;
+}
+
+.main{
+    background:url('https://img.alicdn.com/tfs/TB12yZZrntYBeNjy1XdXXXXyVXa-2500-600.png') no-repeat center center;
+    height:600px;
+    position: relative;
+    .wrap{
+        overflow: hidden;
+        position: absolute;
+        top:0;
+        left:50%;
+        margin-left:-600px;
+        height: 600px;
+        .login_box_wrap{
+            position: absolute;
+            top:120px;
+            right:60px;
+            width:350px;
+            .login_box{
+                background:rgba(255,255,255,0.9);
+                width:300px;
+                padding:25px 25px 23px;
+                color:#fff;
+                position: relative;
+                margin:0 auto;
+            }
+        }
+    }
+}
+.login_hd{
+    .login_switch{
+        width: 52px;
+        height: 52px;
+        line-height: 52px;
+        position: absolute;
+        right: 5px;
+        top: 8px;
+        .iconfont{
+            font-size: 52px;
+            cursor: pointer;
+            display: none;
+            color: #f40;
+        }
+        .quick{
+            display:none;
+        }
+        .static{
+            display:block;
+        }
+    }
+    .login_tip{
+        position: absolute;
+        top:5px;
+        right:58px;
+        border: 1px solid #f3d995;
+        height: 16px;
+        line-height: 16px;
+        padding: 5px 20px 5px 15px;
+        background: #fefcee;
+        .tip_arrow{
+            position: absolute;
+            top:8px;
+            right:0;
+            em{
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-color: rgba(255,255,255,0);
+                border-style: solid;
+                overflow: hidden;
+                top: 0;
+                left: 1px;
+                border-left-color: #f3d995;
+                border-width: 6px 0 6px 6px;
+            }
+            span{
+                border-style: solid;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-color: rgba(255,255,255,0);
+                border-left-color: #fefcee;
+                border-width: 6px 0 6px 6px;
+            }
+        }
+        .userlogin_tip,.quicklogin_tip{
+            color: #df9c1f;
+            font-size: 12px;
+            font-weight: 400;
+            .iconfont{
+                color:#df9c1f;
+                font-size: 14px;
+                margin-right:8px;
+            }
+        }
+        .userlogin_tip{
+            display:none;
+        }
+    }
+    
+}
+.login_bd{
+    .login_title{
+        height: 18px;
+        line-height: 18px;
+        font-size: 16px;
+        color: #3c3c3c;
+        margin-top: 9px;
+        padding-bottom: 8px;
+        font-weight: 700;
+    }
+}
+.quick_login{
+    display:block;
+    .qrcode_main{
+        position: relative;
+        margin-top:24px;
+        height:140px;
+        .qrcode_img{
+            opacity:1;
+            left:80px;
+            position:absolute;
+            top:0;
+            img{
+                vertical-align: top;
+            }
+        }
+    }
+    .qrcode_desc{
+        overflow: hidden;
+        width:188px;
+        margin:24px auto 0;
+        .iconfont{
+            float: left;
+            color: #f40;
+            font-size: 34px;
+            line-height: 36px;
+            margin-right: 10px;
+        }
+        p{
+            width: 144px;
+            line-height: 18px;
+            color: #6c6c6c;
+            font-size: 12px;
+            float: left;
+            .login_footer{
+                color: #9c9c9c;
+            }
+            .light_link{
+                color: #f40;
+            }
+        }
+    }
+    .login_links{
+        margin-top: 25px;
+        overflow: hidden;
+        text-align: right;
+        a{
+            margin-right:10px;
+            color:#6c6c6c;
+        }
+    }
+}
+
+.static_form{
+    position: relative;
+    display:none;
+    .username_field{
+        margin-top:20px;
+        position: relative;
+        label{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            background: #ddd;
+            text-align: center;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            outline: 0;
+            i{
+                font-size:22px;
+            }
+        }
+        .label_ph{
+            position: absolute;
+            line-height: 42px;
+            height: 42px;
+            color: #999;
+            opacity: 1;
+            left: 50px;
+            top: 0;
+            font-size: 14px;
+        }
+        .login_text{
+            width: 240px;
+            font-size: 14px;
+            line-height: 18px;
+            height: 18px;
+            padding: 11px 8px 11px 50px;
+            border: 1px solid #ddd;
+        }
+    }
+    .pwd_field{
+        margin-top:20px;
+        position: relative;
+        label{
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            background: #ddd;
+            text-align: center;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            outline: 0;
+            i{
+                font-size:22px;
+            }
+        }
+        .login_pwd{
+            width: 240px;
+            font-size: 14px;
+            line-height: 18px;
+            height: 18px;
+            padding: 11px 8px 11px 50px;
+            border: 1px solid #ddd;
+        }
+    }
+    .submit{
+        margin-top:20px;
+        button{
+            width: 300px;
+            height: 42px;
+            border: 0;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            font: 16px "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+            line-height: 42px;
+            font-weight: 700;
+            color: #fff;
+            background: #f40;
+            border-radius: 3px;
+            cursor: pointer;
+
+        }
+    }
+    .otherlogin{
+        margin-top:24px;
+        line-height: 14px;
+        a{
+            margin-right:20px;
+            color:#6c6c6c;
+            i{
+                font-size: 16px;
+                margin-right: 3px;
+            }
+        }
+        .weibo_login i{
+            color: #e52425;
+        }
+        .alipay_login i{
+            color: #1ba9ee;
+        }
+    }
+    .login_links{
+        margin-top: 25px;
+        overflow: hidden;
+        text-align: right;
+        a{
+            margin-right: 10px;
+            color: #6c6c6c;
+        }
+    }
+}
+
+.main>a{
+    display:block;
+    width:100%;
+    height:100%;
+    
+}
+
+footer .wrap{
+    margin-top:60px;
+}
