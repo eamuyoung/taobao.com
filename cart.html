@@ -4,9 +4,179 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
+	<title>淘宝网 - 我的购物车</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/cart.css" />
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-	
+	<header>
+		
+	</header>
+	<div class="main">
+		<div class="wrap">
+			<div class="filter_bar">
+				<ul class='switch_cart'>
+					<li class='first'>
+						<em>全部商品</em>
+						<span class='number'>1</span>
+						<span class="pipe"></span>
+					</li>
+					<li>
+						<em>降价商品</em>
+						<span class='number'>0</span>
+						<span class="pipe"></span>
+					</li>
+					<li>
+						<em>库存紧张</em>
+						<span class='number'>0</span>
+					</li>
+				</ul>
+				<div class="cart_sum">
+					<span>已选商品（不含运费）</span>
+					<strong class="price">
+						<span>&nbsp;</span>
+						0.00
+					</strong>
+					<a href="#" class="submit_btn">
+						结&nbsp;算
+					</a>
+				</div>
+				<div class="wrap_line">
+					<div class="floater"></div>
+				</div>
+			</div>
+			<div class="cart_main">
+				<div class="cart_table_th clear">
+					<div class="th_selectall">
+						<input type="checkbox" class="select_all" id='selectall_cbx' />
+						<label for="selectall_cbx">&nbsp;&nbsp;全选</label>
+					</div>
+					<div class="th_item">
+						<div class="td_inner">商品信息</div>
+					</div>
+					<div class="th th_info"><div class="td_inner">&nbsp;</div></div>
+					<div class="th th_price"><div class="td_inner">单价</div></div>
+					<div class="th th_amount"><div class="td_inner">数量</div></div>
+					<div class="th th_sum"><div class="td_inner">金额</div></div><div class="th th-op"><div class="td-inner">操作</div></div>
+				</div>
+				<div class="order_list">
+					<div class="shop_header">
+						<div class="shop_info">
+							<input type="checkbox" class="select_shop" />
+							&nbsp;&nbsp;店铺：
+							<a href="#">全意航空</a>
+							<span class='small_ww'>
+								<a href="#">
+									
+								</a>
+							</span>
+						</div>
+						
+					</div>
+					<div class="order_content">
+						<div class="item_list">
+							<div class="item">
+								<ul class='item_content clear'>
+									<li class="td_checkbox">
+										<input type="checkbox" class='item_ckb'/>
+									</li>
+									<li class="td_item">
+										<div class="td_inner">
+											<div class="item_pic">
+												<a href="#">
+													<img src="https://img.alicdn.com/bao/uploaded/i2/TB1F0yQRFXXXXcXXVXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg" alt="" />
+												</a>
+											</div>
+											<div class="item_info">
+												<a class="item_title" href='#'>
+													贝尔412EP 直升机 个人飞机 租赁 飞机销售 国外飞机 通航服务
+												</a>
+											</div>
+										</div>
+									</li>
+									<li class="td_info">
+										
+									</li>
+									<li class="td_price">
+										<div class="price_content">
+											<em>￥76950000.00</em>
+										</div>
+									</li>
+									<li class="td_amount">
+										<div class="td_inner">
+											<a href="#" class='minus'>-</a>
+											<input type="text" value='1' class='amount_text'/>
+											<a href="#" class='plus'>+</a>
+										</div>
+									</li>
+									<li class="td_sum">
+										<div class="sum_content">
+											<em>￥76950000.00</em>
+										</div>
+									</li>
+									<li class="td_op">
+										<div class="td_inner">
+											<a href="#">移入收藏夹</a>
+											<a href="#">删除</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="floatbar">
+					<input type="checkbox" id='select_all' class='floatbar_1'/>
+					<label for="select_all" class='floatbar_2'>全选</label>
+					<a href="#" class='floatbar_3'>删除</a>
+					<a href="#" class='floatbar_4'>移入收藏夹</a>
+					<a href="#" class='floatbar_5'>分享</a>
+					<span class='floatbar_6'>已选商品<em>0</em>件</span>
+					<span class='floatbar_7'>合计（不含运费）：<em>0.00</em></span>
+					<button class='floatbar_8'>结算</button>
+				</div>
+			</div>
+			<div class="more_goods clear">
+				<div class="goods">
+					<a href="#">
+						<img src="https://img.alicdn.com/bao/uploaded/i3/TB1PtyYRFXXXXcWXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" alt="" />
+						<p class='title'>
+							西科斯基S-76直升机 私人飞机 直升机出租 包机 国外飞机 打农药
+						</p>
+					</a>
+					<button>加入购物车</button>
+				</div>
+				<div class="goods">
+					<a href="#">
+						<img src="https://img.alicdn.com/bao/uploaded/i2/TB19HnpRFXXXXbRXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" alt="" />
+						<p class='title'>
+							阿古斯特AW139直升机 私人飞机出售 直升机出租 植保机飞机 通航
+						</p>
+					</a>
+					<button>加入购物车</button>
+				</div>
+				<div class="goods">
+					<a href="#">
+						<img src="https://img.alicdn.com/bao/uploaded/i3/TB19KDcRFXXXXcmXXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" alt="" />
+						<p class='title'>
+							贝尔525直升机 个人飞机 飞机租赁 旅游包机  通航植保 商务包机
+						</p>
+					</a>
+					<button>加入购物车</button>
+				</div>
+				<div class="goods">
+					<a href="#">
+						<img src="https://img.alicdn.com/bao/uploaded/i2/TB1F0yQRFXXXXcXXVXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" alt="" />
+						<p class='title'>
+							贝尔412EP 直升机 个人飞机 租赁 飞机销售 国外飞机 通航服务
+						</p>
+					</a>
+					<button>加入购物车</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
